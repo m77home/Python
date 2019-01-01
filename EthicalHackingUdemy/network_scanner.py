@@ -2,13 +2,13 @@
 
 
 import scapy.all as scapy
-import optparse
+import argparse
 
 
 def get_arguments():
-    parser = optparse.OptionParser()
-    parser.add_option("-t", "--target", dest="target", help="Target IP or IP range as cmd argument.")
-    (options, arguments) = parser.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-t", "--target", dest="target", help="Target IP or IP range as cmd argument.")
+    options = parser.parse_args()
     return options
 
 
