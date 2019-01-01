@@ -2,6 +2,14 @@
 
 
 import scapy.all as scapy
+import optparse
+
+
+def get_arguments():
+    parser = optparse.OptionParser()
+    parser.add_option("-t", "--target", dest="target", help="Target IP or IP range as cmd argument.")
+    (options, arguments) = parser.parse_args()
+    return options
 
 
 def scan(ip):
@@ -24,5 +32,6 @@ def print_result(result_list):
         print(client["ip"] + "\t\t" + client["mac"])
 
 
-scan_result = scan("192.168.72.2/24")
+options = get_arguments()
+scan_result = scan(options.target)
 print_result(scan_result)
