@@ -17,6 +17,7 @@ git checkout branchName
 '''
 
 ## Merge dev to Master
+'''
 - Master must be active
 git merge dev
 git diff
