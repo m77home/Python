@@ -14,6 +14,7 @@ git commit
 git branch dev (create dev branch)
 git branch (displays branches, * indicates active)
 git checkout branchName 
+'''
 
 ## Merge dev to Master
 - Master must be active
