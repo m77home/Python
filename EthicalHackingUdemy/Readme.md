@@ -3,13 +3,13 @@
 ## Change MAC address
 iwconfig to get wireless adapter name
 
-'''
+´´´
 ifconfig wlan0 down
 
 macchanger --random wlan0
 
 ifconfig wlan0 up
-'''
+´´´
 
 ## Enable monitor mode
 '''
