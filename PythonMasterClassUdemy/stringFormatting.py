@@ -22,11 +22,23 @@ print(string1 + string2)
 print(1*string1 + 2*string2)
 print()
 
+# in operator
 today = "sunday"
 print("day" in today)
 print("sun" in today)
 print("hello" in today)
 print()
 
+# replacement fields
 age = 41
-print("My age is " + str(age))
+print("My age is " + str(age) + " years")
+print("My age is {0} years".format(age))
+print("My name is {0} and I'm {1} years old".format("Micke", 41))
+
+print("""January: {2}
+February: {0}
+March: {2}
+April: {1}
+May: {2}
+June: {1}
+""".format(28, 30, 31))
