@@ -26,3 +26,7 @@ today = "sunday"
 print("day" in today)
 print("sun" in today)
 print("hello" in today)
+print()
+
+age = 41
+print("My age is " + str(age))
